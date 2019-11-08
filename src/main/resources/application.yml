@@ -1,0 +1,16 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /shiro-web
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  datasource:
+    type: org.apache.commons.dbcp.BasicDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:8989/shiro?characterEncoding=UTF-8
+    username: root
+    password: root
+mybatis:
+  mapper-locations: com/baizhi/mapper/*Impl.xml
